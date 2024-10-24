@@ -1,7 +1,7 @@
 Company ID: 1
 Company Name: Blue Cat Inc.
 Users Emailed:
-  None
+    None
 Users Not Emailed:
 Carr, Genesis, genesis.carr@demo.com
     Previous Token Balance, 71
@@ -59,7 +59,7 @@ Total amount of top ups for Red Horse Inc.: 330
 Company ID: 4
 Company Name: Yellow Frog Inc.
 Users Emailed:
-  None
+    None
 Users Not Emailed:
 Gardner, Alexander, alexander.gardner@demo.com
     Previous Token Balance, 40
@@ -93,8 +93,8 @@ Total amount of top ups for Purple Fish Inc.: 246
 Company ID: 6
 Company Name: Red Deer Inc.
 Users Emailed:
-  None
+    None
 Users Not Emailed:
-  None
+    None
 Total amount of top ups for Red Deer Inc.: 0
 

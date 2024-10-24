@@ -50,18 +50,20 @@ File.open('output.txt', 'w') do |file|
 
     file.puts 'Users Emailed:'
     if users_emailed.empty?
-      file.puts '  None'
+      file.puts entry_template['empty']
     else
       users_emailed.each { |entry| file.puts entry }
     end
 
     file.puts 'Users Not Emailed:'
     if users_not_emailed.empty?
-      file.puts '  None'
+      file.puts entry_template['empty']
     else
       users_not_emailed.each { |entry| file.puts entry }
     end
 
-    file.puts "Total amount of top ups for #{company.name}: #{total_top_up}\n\n"
+    file.puts format(
+      entry_template['company_output']['total_top_ups'], company_name: company.name, total_top_up:
+    )
   end
 end
