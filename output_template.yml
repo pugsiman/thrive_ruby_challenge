@@ -1,0 +1,11 @@
+company_output:
+  company_id: "Company ID: %{company_id}"
+  company_name: "Company Name: %{company_name}"
+  users_emailed_header: "Users Emailed:"
+  users_not_emailed_header: "Users Not Emailed:"
+  total_top_ups: "Total amount of top ups for %{company_name}: %{total_top_up}"
+
+user_output:
+  user_entry: "%{last_name}, %{first_name}, %{email}"
+  previous_token_balance: "    Previous Token Balance, %{previous_tokens}"
+  new_token_balance: "    New Token Balance, %{new_tokens}"
