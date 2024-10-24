@@ -35,11 +35,13 @@ File.open('output.txt', 'w') do |file|
       user_entry = format(
         entry_template['user_output']['user_entry'], last_name: user.last_name, first_name: user.first_name, email: user.email
       )
+      previous_tokens_entry = format(entry_template['user_output']['previous_token_balance'], previous_tokens:)
+      new_tokens_entry = format(entry_template['user_output']['new_token_balance'], new_tokens:)
 
       if user.receives_emails?(company.email_status)
-        users_emailed << "#{user_entry}\n    Previous Token Balance, #{previous_tokens}\n    New Token Balance #{new_tokens}"
+        users_emailed << "#{user_entry}\n#{previous_tokens_entry}\n#{new_tokens_entry}"
       else
-        users_not_emailed << "#{user_entry}\n    Previous Token Balance, #{previous_tokens}\n    New Token Balance #{new_tokens}"
+        users_not_emailed << "#{user_entry}\n#{previous_tokens_entry}\n#{new_tokens_entry}"
       end
     rescue StandardError => e
       puts "Error processing user #{user.id}: #{e.message}"
